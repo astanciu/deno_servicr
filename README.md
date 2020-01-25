@@ -5,7 +5,7 @@ A deno service/application manager to gracefully handle startup and shutdown of 
 
 ### Examples:
 
-```
+```js
 import { service } from 'https://LOCATION/deno-servicr/src/index.ts';
 
 await service
@@ -30,7 +30,7 @@ service.shutdown()
 ### Details
 - The `service` object is global. You can import it from any file and it will share the context created during startup. (ex, accessing `service.ctx.db` in deeper route handlers in a web server)
 - `onStart()` and `onShutdown()` handlers can be ordered by setting a second parameter:
-  ```
+  ```js
     service
       .onStart(handlerA, 5)
       .onStart(handlerB, 1)
