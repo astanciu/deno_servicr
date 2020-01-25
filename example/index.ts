@@ -49,7 +49,7 @@ await service
   })
   .start();
 
-setTimeout(() => {
+setTimeout(async () => {
   service.log.info('Good bye')
-  service.shutdown()
+  await service.shutdown()
 }, 5000);

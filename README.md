@@ -22,11 +22,11 @@ await service
   .start()
 
 // Application logic
+// using service.ctx.db and service.ctx.metrics
 
-service.shutdown()
+await service.shutdown()
 
 ```
-
 See a full example [here](example/index.ts)
 
 ### Details
