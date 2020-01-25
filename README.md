@@ -27,6 +27,8 @@ service.shutdown()
 
 ```
 
+See a full example [here](example/index.ts)
+
 ### Details
 - The `service` object is global. You can import it from any file and it will share the context created during startup. (ex, accessing `service.ctx.db` in deeper route handlers in a web server)
 - `onStart()` and `onShutdown()` handlers can be ordered by setting a second parameter:
