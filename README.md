@@ -6,7 +6,7 @@ A deno service/application manager to gracefully handle startup and shutdown of 
 ### Examples:
 
 ```js
-import { service } from 'https://LOCATION/deno-servicr/src/index.ts';
+import { service } from 'https://deno.land/x/servicr/mod.ts';
 
 await service
   .onStart(async ctx => {
